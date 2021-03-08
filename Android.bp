@@ -161,6 +161,16 @@ android_app_import {
 }
 
 android_app_import {
+	name: "aptxui",
+	owner: "asus",
+	apk: "proprietary/app/aptxui/aptxui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "asus",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
