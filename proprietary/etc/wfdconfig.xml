@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <!--
-        Copyright (C) 2012 - 2018 Qualcomm Technologies, Inc.
+        Copyright (C) 2012 - 2019 Qualcomm Technologies, Inc.
         All Rights Reserved.
         Confidential and Proprietary - Qualcomm Technologies, Inc.
     -->
@@ -20,7 +20,7 @@
         <AudioAAC>
             <Name>AAC</Name>
             <Valid>1</Valid>
-            <Channels>2</Channels>
+            <Channels>6</Channels>
             <SamplingFreq>48000</SamplingFreq>
             <Latency>0</Latency>
         </AudioAAC>
@@ -64,9 +64,9 @@
             <VideoCodec1>
                 <CodecName>H.264</CodecName>
                 <Profile>0</Profile>
-                <Level>4</Level>
-                <HorizontalResolution>1920</HorizontalResolution>
-                <VerticalResolution>1080</VerticalResolution>
+                <Level>6</Level>
+                <HorizontalResolution>3840</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
@@ -78,10 +78,10 @@
 
             <VideoCodec2>
                 <CodecName>H.264</CodecName>
-                <Profile>0</Profile>
-                <Level>4</Level>
-                <HorizontalResolution>1920</HorizontalResolution>
-                <VerticalResolution>1080</VerticalResolution>
+                <Profile>1</Profile>
+                <Level>6</Level>
+                <HorizontalResolution>3840</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
@@ -94,9 +94,9 @@
             <VideoCodec3>
                 <CodecName>H.265</CodecName>
                 <Profile>0</Profile>
-                <Level>4</Level>
-                <HorizontalResolution>1920</HorizontalResolution>
-                <VerticalResolution>1080</VerticalResolution>
+                <Level>6</Level>
+                <HorizontalResolution>3840</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
@@ -211,7 +211,7 @@
                     SINGLETOUCH           BIT2
                     MULTITOUCH            BIT3
                     JOYSTICK              BIT4
-                    CAMERA                BIT5
+                    UIBC_CAMERA           BIT5
                     GESTURE               BIT6
                     REMOTECONTROL         BIT7
                 -->
@@ -698,7 +698,7 @@
         To disable/enable audio stream playback
         support during power suspend - 0 or 1
     -->
-    <AudioStreamInSuspend>1</AudioStreamInSuspend>
+    <AudioStreamInSuspend>0</AudioStreamInSuspend>
 
     <!--
         Compensation delay for audio
@@ -744,6 +744,6 @@
     <StreamingSupport>1</StreamingSupport>
 
     <!-- Enfore HDCP for Direct Streaming -->
-    <DSRequiresHDCP>0</DSRequiresHDCP>
+    <DSRequiresHDCP>1</DSRequiresHDCP>
 
 </WFDConfig>
